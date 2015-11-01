@@ -197,3 +197,9 @@ FakesAssemblies/
 OpenAntrag/Video/OpenAntrag-Administration.mp4
 OpenAntrag/Video/OpenAntrag-Administration.ogv
 OpenAntrag/Video/OpenAntrag-Administration.webm
+OpenAntrag/Web.config
+OpenAntrag/Content/Representations/
+OpenAntrag/App_Data/Representations.xml
+OpenAntrag/App_Data/Roles.xml
+OpenAntrag/App_Data/Users.xml
+Thumbs.db

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<steps>
+  <step key="eingang" icon="step-eingang.png" color="#AAAAAA" 
+        caption="Eingang des Antrags" short-caption="Antragseingang" />
+
+  <step key="pruefung" icon="step-pruefung.png" color="#EAC200" 
+        caption="Prüfung des Antrags" short-caption="Prüfung des Antrags" />
+  
+  <step key="behandlung-gruppe" icon="step-fraktion.png" color="#FF8800" 
+        caption="Behandlung in der Fraktionssitzung" short-caption="Behandlung Fraktionssitzung" />
+  
+  <step key="keine-uebernahme" icon="step-abgelehnt.png" color="#D63333"
+      caption="Keine Übernahme des Antrags" short-caption="Keine Übernahme des Antrags" />
+  
+  <step key="uebernahme-abgeordneter" icon="step-abgeordneter.png" color="#2D9D24" 
+        caption="Übernahme durch %REPRESENTATIVE%" short-caption="Übernahme durch Abgeordneten" />
+  
+  <step key="uebernahme-gruppe" icon="step-gruppe.png" color="#2D9D24" 
+        caption="Übernahme durch die Fraktion" short-caption="Übernahme durch Fraktion" />
+
+  <step key="eingereicht" icon="step-einreichung.png" color="#D3840F"
+        caption="Antrag eingereicht" short-caption="Antrag eingereicht" />
+
+  <step key="modifiziert" icon="step-modifiziert.png" color="#A94E00"
+        caption="Antrag modifiziert" short-caption="Antrag modifiziert" />
+
+  <step key="anfrage" icon="step-anfrage.png" color="#6456D5" 
+        caption="Anfrage an [DEN EMPFÄNGER]" short-caption="Anfrage an [EMPFÄNGER]" />
+  
+  <step key="parlament" icon="step-parlament.png" color="#3498DB" 
+        caption="In [DAS PARLAMENT] eingebracht" short-caption="Antrag in Parlament" />
+  
+  <step key="ausschuss" icon="step-ausschuss.png" color="#076FDC" 
+        caption="In den %COMMITTEE% eingebracht" short-caption="Antrag in Ausschuss" />
+  
+  <step key="entschliessungsantrag" icon="step-e-antrag.png" color="#76198C" 
+        caption="Entschließungsantrag" short-caption="Entschließungsantrag" />
+  
+  <step key="gesetzentwurf" icon="step-entwurf.png" color="#964E93" 
+        caption="Gesetzesentwurf" short-caption="Gesetzesentwurf" />
+  
+  <step key="feedback" icon="step-feedback.png" color="#B56000" 
+        caption="Feedback zum Antrag" short-caption="Feedback zum Antrag" />
+  
+  <step key="voting" icon="step-voting.png" color="#EAAA00" 
+        caption="Antrag in [ABSTIMMUNGSPLATTFORM]" short-caption="Antrag in [ABSTIMMUNGSPLATTFORM]" />
+  
+  <step key="mehrheitsgewinnung" icon="step-mehrheitsgewinnung.png" color="#91A03F" 
+        caption="Mehrheitsgewinnung bei anderen Fraktionen" short-caption="Mehrheitsgewinnung Fraktionen" />
+  
+  <step key="vertagung" icon="step-vertagt.png" color="#888888" 
+        caption="Antrag vertagt" short-caption="Antrag vertagt" />
+
+  <step key="uebergabe" icon="step-uebergabe.png" color="#00AB92"
+        caption="Übergabe an [GREMIUM]" short-caption="Übergabe [GREMIUM]" />
+
+  <step key="empfehlung" icon="step-empfehlung.png" color="#00937D"
+        caption="Empfehlung von [GREMIUM]" short-caption="Empfehlung [GREMIUM]" />
+
+  <step key="angenommen" icon="step-angenommen.png" color="#009933" 
+        caption="Antrag angenommen" short-caption="Antrag angenommen" />
+
+  <step key="nicht-notwendig" icon="step-nicht-notwendig.png" color="#009933"
+       caption="Antrag nicht notwendig" short-caption="Antrag nicht notwendig" />
+
+  <step key="abgelehnt" icon="step-abgelehnt.png" color="#D63333" 
+        caption="Antrag abgelehnt" short-caption="Antrag abgelehnt" />
+  
+  <step key="erledigt" icon="step-erledigt.png" color="#333333" 
+        caption="Antrag erledigt" short-caption="Antrag erledigt" />
+</steps>
