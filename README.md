@@ -1,2 +1,2 @@
 # OpenAntrag
-Quellcode Website openantrag.de
+Quellcode der Website openantrag.de
