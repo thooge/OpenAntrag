@@ -1,0 +1,96 @@
+﻿.proposal-head {
+    margin: 0 0 25px 80px;
+}
+.proposal-body h1,
+.proposal-body h2,
+.proposal-body h3,
+.proposal-body h4,
+.proposal-body h5,
+.proposalstep-body h1,
+.proposalstep-body h2,
+.proposalstep-body h3,
+.proposalstep-body h4,
+.proposalstep-body h5 {
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+.proposal-body h1, .proposalstep-body h1 { font-size: 22px; }
+.proposal-body h2, .proposalstep-body h2 { font-size: 20px; }
+.proposal-body h3, .proposalstep-body h3 { font-size: 18px; }
+.proposal-body h4, .proposalstep-body h4 { font-size: 16px; }
+.proposal-body h5, .proposalstep-body h5 { font-size: 14px; }
+
+div#mdd-editor-editproposal textarea,
+div#mdd-editor-blockabuse textarea,
+div#mdd-editor-newsuccessstory textarea{
+    display: block;
+    width: 100%;
+}
+i.proposal-step-icon {
+    position: relative;
+}
+i.proposal-step-icon > i {
+    position: absolute; 
+    left: -10px; 
+    top: 35px; 
+    color: #fff; 
+    font-size: 2.2rem;
+}
+.proposalstep-item {
+    position: relative;
+}
+.proposalstep-item > span.bar {
+    color: #FFFFFF;
+    display: block;
+    float: left;
+    height: 100%;
+    margin-top: -5px;
+    padding: 10px 0 0;
+    min-width: 28px;
+    position: absolute;
+    text-decoration: none;
+}
+.proposalstep-item > div.proposalstep-body {
+    margin-left: 50px;
+}
+.proposalstep-item > div.proposalstep-body > img {
+    float: left;
+    margin-right: 15px;
+    width: 32px;
+}
+.proposalstep-item > div.proposalstep-body > small {
+    display: block;
+}
+.proposalstep-item > div.proposalstep-body > em {
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+.proposalstep-item > div.proposalstep-body > div.info,
+.proposalstep-item > div.proposalstep-body > div.info-edit {
+    margin-top: 20px;
+}
+.nextstep-item {
+    color: #fff !important;
+    font-weight: bold;
+    padding: 10px 15px;
+}
+a.nextstep-item {
+    display: block;
+    text-decoration: none;
+    -moz-transition: none;
+    -o-transition: none;
+    -webkit-transition: none;
+    transition: none;
+}
+#nextstep-info,
+#nextstep-body > em {
+    font-size: 120%;
+}
+#nextstep-body > em > select {
+    margin: 0;
+}
+#nextstep-body > small,
+#nextstep-body textarea {
+    font-size: 100%;
+}

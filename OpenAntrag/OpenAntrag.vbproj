@@ -1,0 +1,684 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{5CDC6161-823C-408C-B8D5-37AB162C163D}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <RootNamespace>OpenAntrag</RootNamespace>
+    <AssemblyName>OpenAntrag</AssemblyName>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionStrict>Off</OptionStrict>
+    <OptionInfer>On</OptionInfer>
+    <MvcBuildViews>false</MvcBuildViews>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>
+    </DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <PublishDatabases>false</PublishDatabases>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>
+    </DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ActionMailer.Net">
+      <HintPath>packages\ActionMailer.0.7.4\lib\Net40\ActionMailer.Net.dll</HintPath>
+    </Reference>
+    <Reference Include="ActionMailer.Net.Mvc">
+      <HintPath>packages\ActionMailer.0.7.4\lib\Net40\ActionMailer.Net.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="Antlr3.Runtime, Version=3.5.0.2, Culture=neutral, PublicKeyToken=eb42632606e9261f, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>packages\Antlr.3.5.0.2\lib\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Artem.Web.Security">
+      <HintPath>packages\Artem.XmlProviders40.4.0\lib\Artem.Web.Security.dll</HintPath>
+    </Reference>
+    <Reference Include="Artem.Web.Security.Xml">
+      <HintPath>packages\Artem.XmlProviders40.4.0\lib\Artem.Web.Security.Xml.dll</HintPath>
+    </Reference>
+    <Reference Include="HtmlAgilityPack, Version=1.4.9.0, Culture=neutral, PublicKeyToken=bd319b19eaf3b43a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>packages\HtmlAgilityPack.1.4.9\lib\Net45\HtmlAgilityPack.dll</HintPath>
+    </Reference>
+    <Reference Include="MarkdownDeep">
+      <HintPath>packages\MarkdownDeep.Full.1.5\lib\.NetFramework 3.5\MarkdownDeep.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>packages\Newtonsoft.Json.6.0.6\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Raven.Abstractions, Version=2.5.0.0, Culture=neutral, PublicKeyToken=37f41c7f99471593, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>packages\RavenDB.Client.2.5.2935\lib\net45\Raven.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Raven.Client.Lightweight, Version=2.5.0.0, Culture=neutral, PublicKeyToken=37f41c7f99471593, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>packages\RavenDB.Client.2.5.2935\lib\net45\Raven.Client.Lightweight.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.Composition" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Net.Http.Formatting, Version=5.2.2.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>packages\Microsoft.AspNet.WebApi.Client.5.2.2\lib\net45\System.Net.Http.Formatting.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.WebRequest" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web.Abstractions" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Helpers, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>packages\Microsoft.AspNet.WebPages.3.2.2\lib\net45\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http, Version=5.2.2.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>packages\Microsoft.AspNet.WebApi.Core.5.2.2\lib\net45\System.Web.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http.WebHost, Version=5.2.2.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>packages\Microsoft.AspNet.WebApi.WebHost.5.2.2\lib\net45\System.Web.Http.WebHost.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=5.2.2.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>packages\Microsoft.AspNet.Mvc.5.2.2\lib\net45\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Optimization">
+      <HintPath>packages\Microsoft.AspNet.Web.Optimization.1.1.3\lib\net40\System.Web.Optimization.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>packages\Microsoft.AspNet.Razor.3.2.2\lib\net45\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Routing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.WebPages, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>packages\Microsoft.AspNet.WebPages.3.2.2\lib\net45\System.Web.WebPages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>packages\Microsoft.AspNet.WebPages.3.2.2\lib\net45\System.Web.WebPages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>packages\Microsoft.AspNet.WebPages.3.2.2\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="WebGrease">
+      <HintPath>packages\WebGrease.1.6.0\lib\WebGrease.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Web.Optimization" />
+    <Import Include="System.Web.Util" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Collections.Specialized" />
+    <Import Include="System.Configuration" />
+    <Import Include="System.Text" />
+    <Import Include="System.Text.RegularExpressions" />
+    <Import Include="System.Web" />
+    <Import Include="System.Web.Caching" />
+    <Import Include="System.Web.Mvc" />
+    <Import Include="System.Web.Mvc.Ajax" />
+    <Import Include="System.Web.Mvc.Html" />
+    <Import Include="System.Web.Routing" />
+    <Import Include="System.Web.SessionState" />
+    <Import Include="System.Web.Security" />
+    <Import Include="System.Web.Profile" />
+    <Import Include="System.Web.UI" />
+    <Import Include="System.Web.UI.WebControls" />
+    <Import Include="System.Web.UI.WebControls.WebParts" />
+    <Import Include="System.Web.UI.HtmlControls" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\AuthConfig.vb" />
+    <Compile Include="App_Start\BundleConfig.vb" />
+    <Compile Include="App_Start\FilterConfig.vb" />
+    <Compile Include="App_Start\FormatterConfig.vb" />
+    <Compile Include="App_Start\RouteConfig.vb" />
+    <Compile Include="App_Start\WebApiConfig.vb" />
+    <Compile Include="Controllers\AccountController.vb" />
+    <Compile Include="Controllers\FeedbackController.vb" />
+    <Compile Include="Controllers\NotificationsApiController.vb" />
+    <Compile Include="Controllers\NotificationsController.vb" />
+    <Compile Include="Controllers\ProposalApiController.vb" />
+    <Compile Include="Controllers\RepresentationApiController.vb" />
+    <Compile Include="Controllers\RepresentationController.vb" />
+    <Compile Include="Controllers\StatisticsController.vb" />
+    <Compile Include="Controllers\TeaserController.vb" />
+    <Compile Include="Controllers\ErrorController.vb" />
+    <Compile Include="Global.asax.vb">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Controllers\HomeController.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Data\FederalStates.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_Data\FeedbackStatusCodes.xml" />
+    <Content Include="App_Data\FeedbackTypes.xml" />
+    <Content Include="App_Data\GroupTypes.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_Data\GovernmentalLevels.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_Data\piratenmandate.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Content\domain.css" />
+    <Content Include="Content\error.css" />
+    <Content Include="Content\faq.css" />
+    <Content Include="Content\feedback.css" />
+    <Content Include="Content\list.css" />
+    <Content Include="Content\notifications.css" />
+    <Content Include="Content\Plugins\bootstrap-datetimepicker.css" />
+    <Content Include="Content\Plugins\bootstrap-select.css" />
+    <Content Include="Content\Plugins\jqcloud.css" />
+    <Content Include="Content\Plugins\jquery.jscrollpane.css" />
+    <Content Include="Content\Plugins\jquery.mCustomScrollbar.css" />
+    <Content Include="Content\Plugins\jquery.mCustomScrollbar.themes.css" />
+    <Content Include="Content\Plugins\selectize.css" />
+    <Content Include="Content\Plugins\tooltipster.css" />
+    <Content Include="Content\proposal.css" />
+    <Content Include="Content\representation.css" />
+    <Content Include="Content\api.css" />
+    <Content Include="Content\home.css" />
+    <Content Include="Content\Representations\testparlament\banner-160x220.png" />
+    <Content Include="Content\Representations\testparlament\banner-275x80.png" />
+    <Content Include="Content\Representations\testparlament\Info\fraktion.info" />
+    <Content Include="Content\Representations\testparlament\IntroBack\1200.jpg" />
+    <Content Include="Content\Representations\testparlament\IntroBack\770.jpg" />
+    <Content Include="Content\Representations\testparlament\IntroBack\980.jpg" />
+    <Content Include="Content\Representations\testparlament\IntroBack\full.jpg" />
+    <Content Include="Content\Representations\testparlament\Portraits\hans-mustermann.png" />
+    <Content Include="Content\Representations\testparlament\style-testparlament.css" />
+    <Content Include="Content\search.css" />
+    <Content Include="Content\statistics.css" />
+    <Content Include="Content\style-teaser.template.css" />
+    <Content Include="Content\style.css" />
+    <Content Include="Content\success.css" />
+    <Content Include="Content\tags.css" />
+    <Content Include="Content\teaser.css" />
+    <Content Include="Fonts\BebasNeue-webfont.svg" />
+    <Content Include="Fonts\Flaticon\adobe21.png" />
+    <Content Include="Fonts\Flaticon\adobe21.svg" />
+    <Content Include="Fonts\Flaticon\css2.png" />
+    <Content Include="Fonts\Flaticon\css2.svg" />
+    <Content Include="Fonts\Flaticon\excel2.png" />
+    <Content Include="Fonts\Flaticon\excel2.svg" />
+    <Content Include="Fonts\Flaticon\flaticon.css" />
+    <Content Include="Fonts\Flaticon\flaticon.html" />
+    <Content Include="Fonts\Flaticon\flaticon.svg" />
+    <Content Include="Fonts\Flaticon\open92.png" />
+    <Content Include="Fonts\Flaticon\open92.svg" />
+    <Content Include="Fonts\Flaticon\word2.png" />
+    <Content Include="Fonts\Flaticon\word2.svg" />
+    <Content Include="Fonts\Flaticon\xml3.png" />
+    <Content Include="Fonts\Flaticon\xml3.svg" />
+    <Content Include="Fonts\Flaticon\zip1.png" />
+    <Content Include="Fonts\Flaticon\zip1.svg" />
+    <Content Include="Fonts\Fontello\css\animation.css" />
+    <Content Include="Fonts\Fontello\css\fontello-openantrag-codes.css" />
+    <Content Include="Fonts\Fontello\css\fontello-openantrag-embedded.css" />
+    <Content Include="Fonts\Fontello\css\fontello-openantrag-ie7-codes.css" />
+    <Content Include="Fonts\Fontello\css\fontello-openantrag-ie7.css" />
+    <Content Include="Fonts\Fontello\css\fontello-openantrag.css" />
+    <Content Include="Fonts\Fontello\demo.html" />
+    <Content Include="Fonts\Fontello\font\fontello-openantrag.svg" />
+    <Content Include="Fonts\Fontello\LICENSE.txt" />
+    <Content Include="Fonts\Fontello\README.txt" />
+    <Content Include="Fonts\PoliticsHeadBold.woff" />
+    <Content Include="Fonts\BebasNeue-webfont.eot" />
+    <Content Include="Fonts\BebasNeue-webfont.ttf" />
+    <Content Include="Fonts\BebasNeue-webfont.woff" />
+    <Content Include="Content\style-allrepresentations.template.css" />
+    <Content Include="Content\Plugins\jquery.mCustomScrollbar.openantrag.css" />
+    <Content Include="Content\style-representation.template.css" />
+    <Content Include="Fonts\Fontello\config.json" />
+    <Content Include="Fonts\Fontello\font\fontello-openantrag.eot" />
+    <Content Include="Fonts\Fontello\font\fontello-openantrag.ttf" />
+    <Content Include="Fonts\Fontello\font\fontello-openantrag.woff" />
+    <Content Include="Downloads\OpenAntrag-FraktionRegistrieren.xls" />
+    <Content Include="Fonts\Flaticon\flaticon.eot" />
+    <Content Include="Fonts\Flaticon\flaticon.ttf" />
+    <Content Include="Fonts\Flaticon\flaticon.woff" />
+    <Content Include="App_Data\piratenmandate.dtd">
+      <SubType>Designer</SubType>
+    </Content>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <Content Include="Content\Plugins\flatstrap-responsive.css" />
+    <Content Include="Content\Plugins\flatstrap-responsive.min.css" />
+    <Content Include="Content\Plugins\flatstrap.css" />
+    <Content Include="Content\Plugins\flatstrap.min.css" />
+    <Content Include="Images\bgtransgrad-150.png" />
+    <Content Include="Images\bgtransgrad-250.png" />
+    <Content Include="Images\bgtransgrad-500.png" />
+    <Content Include="Images\Content\banner-160x220.png" />
+    <Content Include="Images\Content\banner-275x80.png" />
+    <Content Include="Images\Content\drupal-banner.png" />
+    <Content Include="Images\dummy-portrait-invers.png" />
+    <Content Include="Images\dummy-portrait.png" />
+    <Content Include="Images\hr.png" />
+    <Content Include="Images\Icons\arrow-down-left.png" />
+    <Content Include="Images\Icons\arrow-down-right.png" />
+    <Content Include="Images\Icons\arrow-down.png" />
+    <Content Include="Images\Icons\arrow-left.png" />
+    <Content Include="Images\Icons\arrow-right.png" />
+    <Content Include="Images\Icons\arrow-up-left.png" />
+    <Content Include="Images\Icons\arrow-up-right.png" />
+    <Content Include="Images\Icons\arrow-up.png" />
+    <Content Include="Images\Icons\step-abgelehnt.png" />
+    <Content Include="Images\Icons\step-anfrage.png" />
+    <Content Include="Images\Icons\step-ausschuss.png" />
+    <Content Include="Images\Icons\step-e-antrag.png" />
+    <Content Include="Images\Icons\step-eingang.png" />
+    <Content Include="Images\Icons\step-einreichung.png" />
+    <Content Include="Images\Icons\step-entwurf.png" />
+    <Content Include="Images\Icons\step-erledigt.png" />
+    <Content Include="Images\Icons\step-feedback.png" />
+    <Content Include="Images\Icons\step-fraktion.png" />
+    <Content Include="Images\Icons\step-parlament.png" />
+    <Content Include="Images\Icons\step-pruefung.png" />
+    <Content Include="Images\Icons\step-uebernahme.png" />
+    <Content Include="Images\Icons\step-vertagt.png" />
+    <Content Include="Images\Icons\step_angenommen.png" />
+    <Content Include="Images\Icons\step_voting.png" />
+    <Content Include="Images\Icons\step_voting_OLD.png" />
+    <Content Include="Images\IntroBack\api-1200.jpg" />
+    <Content Include="Images\IntroBack\api-770.jpg" />
+    <Content Include="Images\IntroBack\api-980.jpg" />
+    <Content Include="Images\IntroBack\api-full.jpg" />
+    <Content Include="Images\IntroBack\error-1200.jpg" />
+    <Content Include="Images\IntroBack\error-770.jpg" />
+    <Content Include="Images\IntroBack\error-980.jpg" />
+    <Content Include="Images\IntroBack\error-full.jpg" />
+    <Content Include="Images\IntroBack\faq-1200.jpg" />
+    <Content Include="Images\IntroBack\faq-770.jpg" />
+    <Content Include="Images\IntroBack\faq-980.jpg" />
+    <Content Include="Images\IntroBack\faq-full.jpg" />
+    <Content Include="Images\IntroBack\feedback-1200.jpg" />
+    <Content Include="Images\IntroBack\feedback-770.jpg" />
+    <Content Include="Images\IntroBack\feedback-980.jpg" />
+    <Content Include="Images\IntroBack\feedback-full.jpg" />
+    <Content Include="Images\IntroBack\home-1200.jpg" />
+    <Content Include="Images\IntroBack\home-770.jpg" />
+    <Content Include="Images\IntroBack\home-980.jpg" />
+    <Content Include="Images\IntroBack\home-full.jpg" />
+    <Content Include="Images\IntroBack\list-1200.jpg" />
+    <Content Include="Images\IntroBack\list-770.jpg" />
+    <Content Include="Images\IntroBack\list-980.jpg" />
+    <Content Include="Images\IntroBack\list-full.jpg" />
+    <Content Include="Images\IntroBack\notification-1200.jpg" />
+    <Content Include="Images\IntroBack\notification-770.jpg" />
+    <Content Include="Images\IntroBack\notification-980.jpg" />
+    <Content Include="Images\IntroBack\notification-full.jpg" />
+    <Content Include="Images\IntroBack\search-1200.jpg" />
+    <Content Include="Images\IntroBack\search-770.jpg" />
+    <Content Include="Images\IntroBack\search-980.jpg" />
+    <Content Include="Images\IntroBack\search-full.jpg" />
+    <Content Include="Images\IntroBack\statistics-1200.jpg" />
+    <Content Include="Images\IntroBack\statistics-770.jpg" />
+    <Content Include="Images\IntroBack\statistics-980.jpg" />
+    <Content Include="Images\IntroBack\statistics-full.jpg" />
+    <Content Include="Images\IntroBack\success-1200.jpg" />
+    <Content Include="Images\IntroBack\success-770.jpg" />
+    <Content Include="Images\IntroBack\success-980.jpg" />
+    <Content Include="Images\IntroBack\success-full.jpg" />
+    <Content Include="Images\IntroBack\tags-1200.jpg" />
+    <Content Include="Images\IntroBack\tags-770.jpg" />
+    <Content Include="Images\IntroBack\tags-980.jpg" />
+    <Content Include="Images\IntroBack\tags-full.jpg" />
+    <Content Include="Images\Logos\apple-touch-icon-114x114.png" />
+    <Content Include="Images\Logos\apple-touch-icon-120x120.png" />
+    <Content Include="Images\Logos\apple-touch-icon-144x144.png" />
+    <Content Include="Images\Logos\apple-touch-icon-152x152.png" />
+    <Content Include="Images\Logos\apple-touch-icon-57x57.png" />
+    <Content Include="Images\Logos\apple-touch-icon-60x60.png" />
+    <Content Include="Images\Logos\apple-touch-icon-72x72.png" />
+    <Content Include="Images\Logos\apple-touch-icon-76x76.png" />
+    <Content Include="Images\Logos\apple-touch-icon-precomposed.png" />
+    <Content Include="Images\Logos\apple-touch-icon.png" />
+    <Content Include="Images\Logos\browserconfig.xml" />
+    <Content Include="Images\Logos\favicon-160x160.png" />
+    <Content Include="Images\Logos\favicon-16x16.png" />
+    <Content Include="Images\Logos\favicon-196x196.png" />
+    <Content Include="Images\Logos\favicon-32x32.png" />
+    <Content Include="Images\Logos\favicon-96x96.png" />
+    <Content Include="Images\Logos\favicon.ico" />
+    <Content Include="Images\Logos\mstile-144x144.png" />
+    <Content Include="Images\Logos\mstile-150x150.png" />
+    <Content Include="Images\Logos\mstile-310x150.png" />
+    <Content Include="Images\Logos\mstile-310x310.png" />
+    <Content Include="Images\Logos\mstile-70x70.png" />
+    <Content Include="Images\Logos\old\favicon-114.png" />
+    <Content Include="Images\Logos\old\favicon-120.png" />
+    <Content Include="Images\Logos\old\favicon-128.png" />
+    <Content Include="Images\Logos\old\favicon-144.png" />
+    <Content Include="Images\Logos\old\favicon-152.png" />
+    <Content Include="Images\Logos\old\favicon-57.png" />
+    <Content Include="Images\Logos\old\favicon-64.png" />
+    <Content Include="Images\Logos\old\favicon-72.png" />
+    <Content Include="Images\Logos\OALogo315.png" />
+    <Content Include="Images\Logos\OALogo50.png" />
+    <Content Include="Images\Logos\PPLogo315.png" />
+    <Content Include="Images\Logos\PPLogo50.png" />
+    <Content Include="Images\Map\200-BB-blue.png" />
+    <Content Include="Images\Map\200-BB-orange.png" />
+    <Content Include="Images\Map\200-BE-blue.png" />
+    <Content Include="Images\Map\200-BE-orange.png" />
+    <Content Include="Images\Map\200-BW-blue.png" />
+    <Content Include="Images\Map\200-BW-orange.png" />
+    <Content Include="Images\Map\200-BY-blue.png" />
+    <Content Include="Images\Map\200-BY-orange.png" />
+    <Content Include="Images\Map\200-DE-gray.png" />
+    <Content Include="Images\Map\200-DE-white.png" />
+    <Content Include="Images\Map\200-DE.png" />
+    <Content Include="Images\Map\200-HB-blue.png" />
+    <Content Include="Images\Map\200-HB-orange.png" />
+    <Content Include="Images\Map\200-HE-blue.png" />
+    <Content Include="Images\Map\200-HE-orange.png" />
+    <Content Include="Images\Map\200-HH-blue.png" />
+    <Content Include="Images\Map\200-HH-orange.png" />
+    <Content Include="Images\Map\200-MV-blue.png" />
+    <Content Include="Images\Map\200-MV-orange.png" />
+    <Content Include="Images\Map\200-NI-blue.png" />
+    <Content Include="Images\Map\200-NI-orange.png" />
+    <Content Include="Images\Map\200-NW-blue.png" />
+    <Content Include="Images\Map\200-NW-orange.png" />
+    <Content Include="Images\Map\200-RP-blue.png" />
+    <Content Include="Images\Map\200-RP-orange.png" />
+    <Content Include="Images\Map\200-SH-blue.png" />
+    <Content Include="Images\Map\200-SH-orange.png" />
+    <Content Include="Images\Map\200-SL-blue.png" />
+    <Content Include="Images\Map\200-SL-orange.png" />
+    <Content Include="Images\Map\200-SN-blue.png" />
+    <Content Include="Images\Map\200-SN-orange.png" />
+    <Content Include="Images\Map\200-ST-blue.png" />
+    <Content Include="Images\Map\200-ST-orange.png" />
+    <Content Include="Images\Map\200-TH-blue.png" />
+    <Content Include="Images\Map\200-TH-orange.png" />
+    <Content Include="Images\Map\_40-DE.png" />
+    <Content Include="Images\mCSB_buttons.png" />
+    <Content Include="Images\pattern.png" />
+    <Content Include="Images\workflow-schema.png" />
+    <Content Include="ScriptsCustom\admin.js" />
+    <Content Include="ScriptsCustom\feedback.js" />
+    <Content Include="ScriptsCustom\notifications.js" />
+    <Content Include="ScriptsCustom\representations.js" />
+    <Content Include="ScriptsCustom\responsive-tables.js" />
+    <Content Include="ScriptsCustom\teaser.js" />
+    <Content Include="Scripts\headroom.js" />
+    <None Include="Scripts\jquery-2.1.1.intellisense.js" />
+    <Content Include="Scripts\jquery-2.1.1.js" />
+    <Content Include="Scripts\jquery-2.1.1.min.js" />
+    <Content Include="Scripts\jquery-2.1.1.min.map" />
+    <None Include="Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts\jquery.validate.js" />
+    <Content Include="Scripts\jquery.validate.min.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Scripts\MarkdownDeep License.txt" />
+    <Content Include="Scripts\MarkdownDeep Quick Reference.txt" />
+    <Content Include="Scripts\MarkdownDeep.js" />
+    <Content Include="Scripts\MarkdownDeepEditor.js" />
+    <Content Include="Scripts\MarkdownDeepEditorUI.js" />
+    <Content Include="Scripts\mdd_ajax_loader.gif" />
+    <Content Include="Scripts\mdd_gripper.png" />
+    <Content Include="Scripts\mdd_help.htm" />
+    <Content Include="Scripts\mdd_modal_background.png" />
+    <Content Include="Scripts\mdd_styles.css" />
+    <Content Include="Scripts\mdd_toolbar.png" />
+    <Content Include="Scripts\mdd_toolbar_inverse.png" />
+    <Content Include="Scripts\modernizr-2.8.3.js" />
+    <Content Include="Scripts\Plugins\datetimepicker\bootstrap-datetimepicker.de-DE.js" />
+    <Content Include="Scripts\Plugins\datetimepicker\bootstrap-datetimepicker.js" />
+    <Content Include="Scripts\Plugins\bootstrap-select.js" />
+    <Content Include="Scripts\Plugins\highcharts\highcharts.js" />
+    <Content Include="Scripts\Plugins\jqcloud-1.0.4.js" />
+    <Content Include="Scripts\Plugins\jquery.autosize.js" />
+    <Content Include="Scripts\Plugins\jquery.inslide.js" />
+    <Content Include="Scripts\Plugins\jquery.wholly.js" />
+    <Content Include="Scripts\Plugins\picker\picker.js" />
+    <Content Include="Scripts\Plugins\picker\picker.min.js" />
+    <Content Include="Scripts\Plugins\_not-used\jquery.mCustomScrollbar.js" />
+    <Content Include="Scripts\Plugins\jquery.tablesorter.js" />
+    <Content Include="Scripts\Plugins\jquery.wookmark.js" />
+    <Content Include="Scripts\Plugins\jstorage.js" />
+    <Content Include="Scripts\Plugins\moment\de.js" />
+    <Content Include="Scripts\Plugins\jquery.autogrowtextarea.js" />
+    <Content Include="Scripts\Plugins\jquery.equalheights.js" />
+    <Content Include="Scripts\Plugins\jquery.tooltipster.js" />
+    <Content Include="Scripts\Plugins\moment\moment.js" />
+    <Content Include="Scripts\Plugins\moment\moment.min.js" />
+    <Content Include="Scripts\Plugins\perfect-scrollbar\perfect-scrollbar.css" />
+    <Content Include="Scripts\Plugins\perfect-scrollbar\perfect-scrollbar.js" />
+    <Content Include="Scripts\Plugins\readmore.js" />
+    <Content Include="Scripts\Plugins\selectize.js" />
+    <Content Include="Video\OpenAntrag-Administration.mp4" />
+    <Content Include="Views\Representation\Index.vbhtml" />
+    <Content Include="Views\Home\Api.vbhtml" />
+    <Content Include="Views\Shared\_LogonPartial.vbhtml" />
+    <Content Include="Views\Shared\_PasswordResetPartial.vbhtml" />
+    <Content Include="Views\Mail\ResetPasswordEmail.txt.vbhtml" />
+    <Content Include="Views\Shared\_PasswordResetSuccessPartial.vbhtml" />
+    <Content Include="Views\Shared\_ErrorBoxPartial.vbhtml" />
+    <Content Include="Views\Shared\_PasswordChangeSuccessPartial.vbhtml" />
+    <Content Include="Views\Shared\_PasswordChangePartial.vbhtml" />
+    <Content Include="Views\Representation\_NewProposalPartial.vbhtml" />
+    <Content Include="Views\Representation\Proposal.vbhtml" />
+    <Content Include="Views\Representation\_NavRepresentation.vbhtml" />
+    <Content Include="Views\Shared\_ProposalBlockPartial.vbhtml" />
+    <Content Include="Views\Error\Uups.vbhtml" />
+    <Content Include="Views\Representation\_NewProposalCommentPartial.vbhtml" />
+    <Content Include="Views\Representation\_ProposalCommentPartial.vbhtml" />
+    <Content Include="Views\Representation\_NextStepPartial.vbhtml" />
+    <Content Include="Views\Shared\_ProposalTagListPartial.vbhtml" />
+    <Content Include="Views\Home\Tags.vbhtml" />
+    <Content Include="Views\Mail\NewProposalEmail.txt.vbhtml" />
+    <Content Include="Views\Mail\NewProposalCommentEmail.txt.vbhtml" />
+    <Content Include="Views\Feedback\Index.vbhtml" />
+    <Content Include="Views\Feedback\_NewFeedbackCommentPartial.vbhtml" />
+    <Content Include="Views\Feedback\_FeedbackCommentPartial.vbhtml" />
+    <Content Include="Views\Shared\_NavCommonRightPartial.vbhtml" />
+    <Content Include="Views\Home\Journal.vbhtml" />
+    <Content Include="Views\Shared\_NavCommonLeftPartial.vbhtml" />
+    <Content Include="Views\Representation\_RepresentationIntro.vbhtml" />
+    <Content Include="Views\Home\_RepresentationBox.vbhtml" />
+    <Content Include="Views\Shared\_SubnavRepresentations.vbhtml" />
+    <Content Include="Views\Shared\_FederalMap.vbhtml" />
+    <Content Include="Views\Home\Overview.vbhtml" />
+    <Content Include="Views\Home\Faq.vbhtml" />
+    <Content Include="Views\Home\Search.vbhtml" />
+    <Content Include="Views\Representation\Banner.vbhtml" />
+    <Content Include="Views\Shared\_ProposalSublinksPartial.vbhtml" />
+    <Content Include="Views\Mail\NewProposalAbuseNoticeEmail.txt.vbhtml" />
+    <Content Include="Views\Notifications\Index.vbhtml" />
+    <Content Include="Views\Notifications\_NotificationPartial.vbhtml" />
+    <Content Include="Views\Shared\_NewPostPartial.vbhtml" />
+    <Content Include="Views\Statistics\Index.vbhtml" />
+    <Content Include="Views\Statistics\_ProposalCountByRepresentationPartial.vbhtml" />
+    <Content Include="Views\Statistics\_RepresentationCountByTypePartial.vbhtml" />
+    <Content Include="Views\Statistics\_FeedbackCountByTypePartial.vbhtml" />
+    <Content Include="Views\Representation\_BannerTeaserPartial.vbhtml" />
+    <Content Include="Views\Representation\Journal.vbhtml" />
+    <Content Include="Views\Representation\Add.vbhtml" />
+    <Content Include="Views\Representation\List.vbhtml" />
+    <Content Include="Views\Shared\_ProposalRowPartial.vbhtml" />
+    <Content Include="Views\Shared\_ProposalRowHeadPartial.vbhtml" />
+    <Content Include="Views\Home\List.vbhtml" />
+    <Content Include="Views\Home\_WorkflowSchemaPartial.vbhtml" />
+    <Content Include="Views\Representation\_NewSuccessStoryPartial.vbhtml" />
+    <Content Include="Views\Home\Success.vbhtml" />
+    <Content Include="Views\Shared\_SuccessStoryBlockPartial.vbhtml" />
+    <Content Include="Views\Shared\_ProposalListTablePartial.vbhtml" />
+    <Content Include="Views\Representation\SuccessStory.vbhtml" />
+    <Content Include="Views\Shared\_SuccessStorySublinksPartial.vbhtml" />
+    <Content Include="Views\Feedback\_NewFeedbackPartial.vbhtml" />
+    <Content Include="Views\Teaser\Index.vbhtml" />
+    <Content Include="Views\Teaser\_TeaserIntro.vbhtml" />
+    <Content Include="Views\Teaser\_NavTeaser.vbhtml" />
+    <Content Include="Views\Shared\AsciiArtPartial.cshtml" />
+    <Content Include="Views\Error\ErrorLog.vbhtml" />
+    <Content Include="Views\Representation\Settings.vbhtml" />
+    <Content Include="Scripts\Plugins\picker\picker.min.js.map">
+      <DependentUpon>picker.js</DependentUpon>
+    </Content>
+    <Content Include="Views\Representation\_PiratenmandatePartial.vbhtml" />
+    <Content Include="Views\Representation\_RepresentativePartial.vbhtml" />
+    <Content Include="Video\OpenAntrag-Administration.ogv" />
+    <Content Include="Video\OpenAntrag-Administration.webm" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="favicon.ico" />
+    <Content Include="Global.asax" />
+    <Content Include="packages.config" />
+    <Content Include="ScriptsCustom\main.js" />
+    <Content Include="ScriptsCustom\tools.js" />
+    <Content Include="ScriptsCustom\validation.js" />
+    <Content Include="ScriptsCustom\xhr.js" />
+    <Content Include="Scripts\Plugins\bootstrap.js" />
+    <Content Include="Scripts\Plugins\jquery.cookie.js" />
+    <Content Include="Scripts\Plugins\_not-used\jquery.jscrollpane.js" />
+    <Content Include="Scripts\Plugins\_preload\jquery.mousewheel.js" />
+    <Content Include="Scripts\Plugins\jquery.scrollTo-1.4.3.1.js" />
+    <Content Include="Scripts\Plugins\shortcut-custom.js" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Scripts\_references.js" />
+    <Content Include="Views\_ViewStart.vbhtml" />
+    <Content Include="Views\Home\Index.vbhtml" />
+    <Content Include="Views\Shared\_Layout.vbhtml" />
+    <Content Include="Views\Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Content\Teaser\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\OpenAntragLib\OpenAntragLib.vbproj">
+      <Project>{0fffc9e8-fe8f-485e-88fc-af0b947e9fb2}</Project>
+      <Name>OpenAntragLib</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <Target Name="MvcBuildViews" AfterTargets="AfterBuild" Condition="'$(MvcBuildViews)'=='true'">
+    <AspNetCompiler VirtualPath="temp" PhysicalPath="$(WebProjectOutputDir)" />
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>51219</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:55588/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <PropertyGroup>
+    <PreBuildEvent>xcopy /y "E:\DevProjects\piratenmandate\piratenmandate.xml"  "$(ProjectDir)App_Data"
+xcopy /y "E:\DevProjects\piratenmandate\piratenmandate.dtd"  "$(ProjectDir)App_Data"</PreBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target> -->
+</Project>

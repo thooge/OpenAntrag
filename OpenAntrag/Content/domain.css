@@ -1,0 +1,17 @@
+﻿span.highlight2 { color: #ff8800; }
+#topbar { background-color: #ff8800; }
+#topbar div.left { background-color: #ff8800; }
+header div.main h2 a:hover { color: #ff8800; }
+header div.main h2 a:hover .caret { border-top-color: #ff8800 !important; }
+#headnav #country-headnav a.selected { color: #ff8800; }
+footer { background-color: #FF8800; }
+footer #footer-commands > a { background-color: #FF8800; }
+a#backtop { background-color: #ff8800; }
+
+footer div.left { background-color: #FFA948; }
+footer div.right { background-color: #FFA948; }
+footer #footer-commands > a:hover { background-color: #FFA948; }
+
+div.content-info .btn-group-invers > .btn-primary {
+    background-color: #ff8800;
+}

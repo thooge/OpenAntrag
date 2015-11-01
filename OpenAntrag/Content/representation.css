@@ -1,0 +1,157 @@
+﻿#body ul.schema-info {
+    margin: 0px; 
+    overflow: hidden;
+}
+#body ul.schema-info > li {
+    list-style: none outside none; 
+    border: none; 
+}
+#body ul.schema-info > li > span {
+    display: inline-block; 
+    width: 100%; 
+    padding: 5px 0 5px 10px;
+}
+#body ul.schema-info > li > ul {
+    margin: 0 0 0 15px;
+}
+#body ul.schema-info > li > ul li {
+    list-style: none outside none; 
+    margin: 0px; 
+    clear: both;
+}
+#body ul.schema-info > li > ul li > i {
+    float: left;
+    font-size: 30px;
+    color: #fff !important;
+    margin-left: 0px;
+}
+#body ul.schema-info > li > ul li > span {
+    padding: 5px 0px 5px 10px; 
+    display: inline-block;
+}
+#body ul.schema-info  li span {
+    color: #fff;
+}
+#body ul.schema-info > li > span > strong,
+#body ul.schema-info > li > ul li > span > strong {
+    padding: 0px 10px 0px 0px;
+}
+#body div#new-proposal input,
+#body div#new-proposal textarea {
+    display: block; 
+    /*width: calc(100% - 15px);*/
+    width: 95%;
+}
+#journal-container .box-head {
+    position: relative;
+}
+#journal-container .box-head span.page-number {
+    color: #eee;
+    display: inline-block;
+    font-size: 34px;
+    font-weight: bold;
+    left: 336px;
+    position: absolute;
+    top: 28px;
+}
+#representation div.comm p {
+    font-size: 14px; 
+    margin-bottom: 2px;
+}
+div.representative {
+    background-color: #f4f4f4;
+    clear: both;
+    margin-bottom: 10px;
+    margin-left: 0;
+    margin-right: -5px;
+    overflow: auto;
+    padding: 0 10px 0 0;
+}
+div.representative img {
+    float: left;
+    width: 90px;
+    margin-right: 10px;
+}
+div.representative > div {
+    margin-top: -4px;
+}
+div.representative > div h5 {
+    margin-bottom: 0;
+}
+div.representative > div span {
+    display: block;
+    margin-bottom: 8px;
+    -ms-word-wrap: break-word;
+    word-wrap: break-word;
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    -ms-hyphens: auto;
+    -o-hyphens: auto;
+    hyphens: auto;
+}
+div.representative div.comm {
+    margin-top: 2px;
+}
+div.representative div.comm a {
+    display: block;
+    line-height: 14px;
+    margin-top: 4px;
+    -ms-word-wrap: break-word;
+    word-wrap: break-word;
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    -ms-hyphens: auto;
+    -o-hyphens: auto;
+    hyphens: auto;
+    font-size: 12px;
+}
+div.representative div.comm a i {
+    margin-right: 5px;
+    font-style: normal;
+}
+div.representative div.comm a i[class^="icon-"]:before, 
+div.representative div.comm a i[class*=" icon-"]:before {
+    margin-left: 2px !important;
+    margin-right: 8px !important;
+    color: #333;
+}
+div.piratenmandate {
+    position: relative;
+    background-color: #f4f4f4; 
+    padding: 15px 5px 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    overflow: hidden;   
+}
+div.piratenmandate > a img {
+    height: 50px    
+}
+div.piratenmandate > div {
+    margin: 15px 10px 0 15px;
+}
+div.piratenmandate div.links {
+    margin-top: 20px;
+    margin-bottom: 20px;  
+}
+div.piratenmandate div.links a {
+    display: block;
+    margin-bottom: 10px;
+    margin-right: 0;
+}
+div.piratenmandate > i.icon-network {
+    color: #fff;
+    font-size: 75px;
+    position: absolute;
+    right: -20px;
+    top: -20px;    
+}
+/*div.piratenmandate > div.triangle {                
+    position: absolute;
+    top: -15px;
+    right: 10px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 25px 25px 0 25px;
+    border-color: #fff transparent transparent transparent;
+}*/

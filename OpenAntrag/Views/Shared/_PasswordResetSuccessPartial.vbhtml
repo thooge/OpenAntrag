@@ -1,0 +1,1 @@
+﻿<p>Dein neues Kennwort wurde an Deine Mail-Adresse versandt.</p>

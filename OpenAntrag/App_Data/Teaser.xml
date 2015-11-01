@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<teaser>
+  
+  <item id="1" key="ulm"
+      label="Ulm" color="#AF4038"
+      name="Stadtrat Ulm" name2="Ulm (Stadtrat)"
+      level="4" federal="BW"      
+      link="http://ulmhoch3.de"
+      twitter="ulmhoch3"
+      mail="info@ulmhoch3.de"
+      teaser-url="ulmhoch3"
+      election-date="25.05.2014"
+      key-represenation="ulm" />
+
+</teaser>

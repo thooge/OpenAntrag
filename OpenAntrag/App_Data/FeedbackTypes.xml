@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<types>
+  <type id="0" key="mitteilung" name="Mitteilung" icon="chat" voting="false" color="#2D76AA" />
+  <type id="1" key="wunsch" name="Wunsch (Feature)" icon="idea" voting="true" color="#E47900" />
+  <type id="2" key="fehler" name="Fehlerhinweis" icon="bug" voting="false" color="#B80000" />
+</types>

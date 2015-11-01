@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<levels>
+  <!--<level id="1" name="Bund" />-->
+  <level id="2" name="Land" />
+  <level id="3" name="Region" />
+  <level id="4" name="Kreis/Stadt" />
+  <level id="5" name="Bezirk/Samtgemeinde" />
+  <level id="6" name="Ort/Gemeinde" />
+</levels>

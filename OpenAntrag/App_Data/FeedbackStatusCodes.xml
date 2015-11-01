@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<statuscodes>
+  <statuscode id="0" name="unbekannt" />
+  <statuscode id="1" name="geplant" />
+  <statuscode id="2" name="in Arbeit" />
+  <statuscode id="3" name="abgeschlossen" />
+</statuscodes>

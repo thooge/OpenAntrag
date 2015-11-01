@@ -1,0 +1,24 @@
+﻿@media (min-width: 1200px) {
+    #intro {
+        background: url('/Images/bgtransgrad-500.png') no-repeat left center, 
+                    url('/Images/IntroBack/success-full.jpg') no-repeat right center; 
+    }
+}
+@media (min-width: 980px) and (max-width: 1199px) {
+    #intro {
+        background: url('/Images/bgtransgrad-500.png') no-repeat left center, 
+                    url('/Images/IntroBack/success-1200.jpg') no-repeat right center; 
+    }
+}
+@media (min-width: 768px) and (max-width: 979px) {
+    #intro {
+        background: url('/Images/bgtransgrad-250.png') no-repeat left center, 
+                    url('/Images/IntroBack/success-980.jpg') no-repeat right center; 
+    }
+}
+@media (max-width: 767px) {
+    #intro {
+        background: url('/Images/bgtransgrad-150.png') no-repeat left center, 
+                    url('/Images/IntroBack/success-770.jpg') no-repeat right center; 
+    }
+}

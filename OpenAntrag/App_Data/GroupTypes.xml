@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<types>
+  <type id="0" name="Fraktion" name-gen="die Fraktion" common="Fraktion" color="#333333" />
+  <type id="1" name="Einzelabgeordneter" name-gen="den Abgeordneten" common="Einzelabgeordnete" color="#AA1919" />
+  <type id="-1" name="Einzelabgeordnete" name-gen="die Abgeordnete" common="Einzelabgeordnete" color="#AA1919" />
+  <type id="2" name="Gruppe" name-gen="die Gruppe" common="Gruppe"  color="#3498DB" />
+  <type id="3" name="Sondergruppe" name-gen="die Sondergruppe" common="Sondergruppe" color="#8BBC21" />
+</types>

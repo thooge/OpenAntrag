@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<federalstates>
+  <federalstate key="BW" name="Baden-Württemberg" />
+  <federalstate key="BY" name="Bayern" />
+  <federalstate key="BE" name="Berlin" />
+  <federalstate key="BB" name="Brandenburg" />
+  <federalstate key="HB" name="Bremen" />
+  <federalstate key="HH" name="Hamburg" />
+  <federalstate key="HE" name="Hessen" />
+  <federalstate key="MV" name="Mecklenburg-Vorpommern" />
+  <federalstate key="NI" name="Niedersachsen" />
+  <federalstate key="NW" name="Nordrhein-Westfalen" />
+  <federalstate key="RP" name="Rheinland-Pfalz" />
+  <federalstate key="SL" name="Saarland" />
+  <federalstate key="SN" name="Sachsen" />
+  <federalstate key="ST" name="Sachsen-Anhalt" />
+  <federalstate key="SH" name="Schleswig-Holstein" />
+  <federalstate key="TH" name="Thüringen" />
+</federalstates>

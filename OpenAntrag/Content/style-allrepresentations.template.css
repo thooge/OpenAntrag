@@ -1,0 +1,20 @@
+﻿#mainsubnav-rep #mainsubnav-rep-list a.rid[ID]:hover,
+#mainsubnav-rep #mainsubnav-rep-list a.rid[ID]:focus {
+    background-color: [COLOR] !important;
+}
+#body div.content div.fraktionbox.rid[ID] > a.rbar,
+#body div.content div.success-item.rid[ID] > a.btn {
+    background-color: [COLOR]; color: #fff;
+}
+#body div.content div.success-item.rid[ID] > a.btn:hover {
+    background-color: [COLORBRIGHT];
+}
+table tr.rid[ID] a,
+#body div.content div.fraktionbox.rid[ID] a,
+#body div.content div.rid[ID] div.proposal-body a,
+#body div.content div.rid[ID] .sublinks a {
+    color: [COLORTEXT];
+}
+#mainsubnav-rep #mainsubnav-rep-list a.rid[ID] {
+    border-color: [COLOR];
+}

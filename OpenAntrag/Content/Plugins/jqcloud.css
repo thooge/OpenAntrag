@@ -1,0 +1,41 @@
+
+div.jqcloud {
+    overflow: hidden;
+    position: relative;
+    font-family: 'PoliticsHeadBold', 'Helvetica Neue', 'Arial', Sans-Serif;
+    font-size: 10px;
+    line-height: normal;
+}
+div.jqcloud span {
+    padding: 0;
+}
+div.jqcloud a {
+    font-size: inherit;
+    text-decoration: none;
+}
+
+div.jqcloud span.w10 { font-size: 400%; }
+div.jqcloud span.w9 { font-size: 333%; }
+div.jqcloud span.w8 { font-size: 300%; }
+div.jqcloud span.w7 { font-size: 250%; }
+div.jqcloud span.w6 { font-size: 225%; }
+div.jqcloud span.w5 { font-size: 200%; }
+div.jqcloud span.w4 { font-size: 175%; }
+div.jqcloud span.w3 { font-size: 150%; }
+div.jqcloud span.w2 { font-size: 125%; }
+div.jqcloud span.w1 { font-size: 100%; }
+
+div.jqcloud { color: #333; }
+div.jqcloud a { color: inherit; }
+div.jqcloud a:hover { color: #ff8800 /*#3498DB*/; }
+div.jqcloud a:hover { color: #ff8800 /*#3498DB*/; }
+div.jqcloud span.w10 { color: #111; }
+div.jqcloud span.w9 { color: #333; }
+div.jqcloud span.w8 { color: #333; }
+div.jqcloud span.w7 { color: #555; }
+div.jqcloud span.w6 { color: #555; }
+div.jqcloud span.w5 { color: #777; }
+div.jqcloud span.w4 { color: #777; }
+div.jqcloud span.w3 { color: #999; }
+div.jqcloud span.w2 { color: #999; }
+div.jqcloud span.w1 { color: #999; }

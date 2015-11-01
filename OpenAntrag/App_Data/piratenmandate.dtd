@@ -1,0 +1,46 @@
+<!ELEMENT piratenmandate (bundesland+) >
+
+<!ELEMENT bundesland (parlament?, gebiet*) >
+<!ATTLIST bundesland name CDATA #REQUIRED >
+<!ATTLIST bundesland gs CDATA #REQUIRED >
+<!ATTLIST bundesland localpirates CDATA #IMPLIED >
+
+<!ELEMENT gebiet (parlament*, gebiet*) >
+<!ATTLIST gebiet type CDATA #REQUIRED >
+<!ATTLIST gebiet name CDATA #REQUIRED >
+<!ATTLIST gebiet gs CDATA #IMPLIED >
+<!ATTLIST gebiet localkey CDATA #IMPLIED > <!--Amtlicher Schlüssel, falls kein gs-->
+<!ATTLIST gebiet arbkey CDATA #IMPLIED > <!--Beliebiger Schlüssel, falls sonst keiner-->
+<!ATTLIST gebiet localpirates CDATA #IMPLIED >
+
+<!ELEMENT parlament (oa?, mandat+, fraktion?, story?, feed?) >
+<!ATTLIST parlament name CDATA #REQUIRED >
+<!ATTLIST parlament seats CDATA #IMPLIED >
+<!ATTLIST parlament ris CDATA #IMPLIED >
+
+<!ELEMENT oa EMPTY >
+<!ATTLIST oa url CDATA #REQUIRED >
+
+<!ELEMENT mandat (#PCDATA) >
+<!ATTLIST mandat type (pirat | transfer | fremdliste) #REQUIRED >
+<!ATTLIST mandat name CDATA #IMPLIED >
+<!ATTLIST mandat from CDATA #IMPLIED >
+<!ATTLIST mandat multi CDATA #IMPLIED >
+<!ATTLIST mandat email CDATA #IMPLIED >
+
+<!ELEMENT fraktion (partner*) >
+<!ATTLIST fraktion type (piraten | gemeinsam | gruppe | fremd | none | unknown) #REQUIRED >
+<!ATTLIST fraktion name CDATA #IMPLIED >
+<!ATTLIST fraktion url CDATA #IMPLIED >
+<!ATTLIST fraktion email CDATA #IMPLIED >
+
+<!ELEMENT story (#PCDATA) >
+<!ATTLIST story source CDATA #IMPLIED >
+
+<!ELEMENT feed (#PCDATA) >
+<!ATTLIST feed url CDATA #IMPLIED >
+
+<!ELEMENT partner EMPTY >
+<!ATTLIST partner name CDATA #IMPLIED >
+<!ATTLIST partner partei CDATA #REQUIRED >
+<!ATTLIST partner num CDATA #IMPLIED >

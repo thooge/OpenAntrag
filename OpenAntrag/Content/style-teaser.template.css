@@ -1,0 +1,69 @@
+﻿/* CUSTOM-COLOR */
+#repnav,
+#repnav a,
+.content-teaser .btn-primary, 
+#body div.content-edit,
+.btn-represenation {
+    background-color: [COLOR]; color: #FFFFFF;
+}
+a.nextstep-item:hover,
+.pagination ul > li.active > span,
+.tooltipster-repnav {
+    background-color: [COLOR] !important; color: #FFFFFF !important;
+}
+#body div.content-info a {
+    color: [COLORBRIGHT] !important;
+}
+#body div.content-teaser a:not(.btn) {
+    color: [COLORTEXT];
+}
+a.nextstep-item.arrow-down:hover:after,
+a.nextstep-item.arrow-down:hover:before {
+    border-top-color: [COLOR];
+}
+.pagination ul > li > a:hover, 
+.dropdown-menu > li > a:hover, 
+.dropdown-submenu:hover > a, 
+.selectize-control.default.multi .selectize-input > div:hover,
+.selectize-control.default.multi .selectize-input > div.active,
+.selectize-control.default.multi .selectize-dropdown .highlight,
+.selectize-control.default.multi .selectize-dropdown > *.active,
+.btn-represenation:hover,
+.btn-represenation:focus {
+    background-color: [COLORBRIGHT]; color: #FFFFFF;
+}
+.content-teaser .btn-primary:hover, 
+.content-teaser .btn-primary:active, 
+.content-teaser .btn-primary.active, 
+.btn-inverse:hover, 
+.content-edit .btn-primary:hover,
+#repnav div.main a:hover,
+.pagination ul > li.dir > a:hover,
+.pagination ul > li > a:hover {
+    background-color: [COLORBRIGHT] !important; color: #FFFFFF;
+}
+/* ---------- */
+@media (min-width: 1200px) {
+    #intro {
+        background: url('/Images/bgtransgrad-500.png') no-repeat left center, 
+                    url('/Content/Teaser/[KEY]/IntroBack/full.jpg') no-repeat right center; 
+    }
+}
+@media (min-width: 980px) and (max-width: 1199px) {
+    #intro {
+        background: url('/Images/bgtransgrad-500.png') no-repeat left center, 
+                    url('/Content/Teaser/[KEY]/IntroBack/1200.jpg') no-repeat right center; 
+    }
+}
+@media (min-width: 768px) and (max-width: 979px) {
+    #intro {
+        background: url('/Images/bgtransgrad-250.png') no-repeat left center, 
+                    url('/Content/Teaser/[KEY]/IntroBack/980.jpg') no-repeat right center; 
+    }
+}
+@media (max-width: 767px) {
+    #intro {
+        background: url('/Images/bgtransgrad-150.png') no-repeat left center, 
+                    url('/Content/Teaser/[KEY]/IntroBack/770.jpg') no-repeat right center; 
+    }
+}

@@ -1,0 +1,200 @@
+
+#body table#workflow-schema th,
+#body table#workflow-schema td {
+    text-align: center;
+    line-height: 16px;
+    height: 50px;
+    padding: 0;
+}
+#body table#workflow-schema th {
+    min-height: 80px;
+    padding: 10px;
+    width: 80px;
+}
+#body table#workflow-schema th span {
+    color: white;
+    white-space: pre-wrap;
+}
+#body table#workflow-schema th.wf1 { background-color: #AAAAAA; }
+#body table#workflow-schema th.wf2 { background-color: #F2C900; }
+#body table#workflow-schema th.wf3 { background-color: #D63333; }
+#body table#workflow-schema th.wf4 { background-color: #FF8800; }
+#body table#workflow-schema th.wf5 { background-color: #2D9D24; }
+#body table#workflow-schema th.wf6 { background-color: #076FDC; }
+#body table#workflow-schema th.wf7 { background-color: #3498DB; }
+#body table#workflow-schema th.wf8 { background-color: #6456D5; }
+#body table#workflow-schema th.wf9 { background-color: #333333; }
+
+#body div.content div.fraktionbox {
+    background-color: #fff; 
+    margin-bottom: 15px;
+    position: relative; 
+    overflow: hidden;
+}
+#body div.content div.fraktionbox > a {
+    display: block; 
+    position: absolute; 
+    padding: 10px 8px 0;     
+    height: 100%; 
+    float: left;
+    text-decoration: none;
+}
+#body div.content div.fraktionbox > a:hover {
+    background-color: #444 !important; 
+}
+#body div.content div.fraktionbox > a > i {
+    font-size: 20px; 
+    color: #fff; 
+    text-decoration: none;
+}
+#body div.content div.fraktionbox div {
+    padding: 10px 5px 10px 45px;
+}
+#body div.content div.fraktionbox div small {
+    color: #aaa;
+    font-size: 12px;
+}
+#body div.content div.fraktionbox div a.rep-name {
+    text-decoration: none;
+}
+#body div.content div.fraktionbox div a.rep-name h4 {
+    line-height: 20px;
+    margin: 0 0 5px;
+    -ms-word-wrap: break-word;
+    word-wrap: break-word;
+    color: #333;
+}
+#body div.content div.fraktionbox div a.rep-name.ended h4,
+#body div.content div.fraktionbox div em.group-name.ended {
+    text-decoration: line-through;
+}
+#body div.content div.fraktionbox div em {
+    display: block;
+}
+#body div.content div.fraktionbox div img {
+    float: right;
+    height: 60px;
+    padding: 10px;
+}
+#body div.content div#pm-container .pm-item {
+    background-color: #fff;
+    border-left: 10px solid #ddd;
+    display: inline-block;
+    margin: 2px 0;
+    padding: 4px 6px;
+    text-decoration: none;
+}
+#body div.content div#pm-container a.pm-item:hover {
+    background-color: #333;
+    color: #fff;
+}
+#body div.content div#rv-container a {
+    display: block;
+    float: left;
+    width: 80px;
+    height: 80px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    -ms-background-size: 10px;
+    background-size: 90px;
+    border: 5px transparent solid;
+    -moz-transition: a 0.3s ease-in;
+	-webkit-transition: a 0.3s ease-in;
+	-o-transition: a 0.3s ease-in;
+    transition: all 0.3s ease-in;
+}
+
+#body div.content div#rv-container a:hover {
+    -ms-background-size: 100px;
+    background-size: 100px;
+    border: 5px #ff8800 solid;
+    -webkit-box-shadow: inset 0 0 5px #333;
+    -ms-box-shadow: inset 0 0 5px #333;
+    box-shadow: inset 0 0 5px #333;
+}
+
+#mapD {
+    width: 200px;
+    height: 271px;
+    position: relative;
+    background: url(/Images/Map/200-DE-white.png) no-repeat center center;
+}
+#mapD > a {
+    position: absolute;
+    top: 0;
+    left: -1000px;
+    opacity: 0;
+    z-index: 0;
+    -moz-transition: opacity 0.3s ease-in;
+	-webkit-transition: opacity 0.3s ease-in;
+	-o-transition: opacity 0.3s ease-in;
+    transition: opacity 0.3s ease-in;
+}
+
+#mapD > a:hover {
+    opacity: 1 !important;
+}
+#mapD > a.active { opacity: 0.25; }
+#mapD > a.inactive:hover { opacity: 0.25 !important; }
+
+#mapD a#mapBW { left: 33px;     top: 183px; z-index: 1; }
+#mapD a#mapBY { left: 68px;     top: 157px; }
+#mapD a#mapBE { left: 156px;    top: 76px; z-index: 1; }
+#mapD a#mapBB { left: 117px;    top: 51px; }
+#mapD a#mapHB { left: 59px;     top: 51px; z-index: 1; }
+#mapD a#mapHH { left: 85px;     top: 42px; z-index: 1; }
+#mapD a#mapHE { left: 41px;     top: 119px; z-index: 1; }
+#mapD a#mapMV { left: 102px;    top: 13px; }
+#mapD a#mapNI { left: 21px;     top: 41px; }
+#mapD a#mapNW { left: 0;        top: 88px; }
+#mapD a#mapRP { left: 5px;      top: 143px; }
+#mapD a#mapSL { left: 9px;      top: 186px; }
+#mapD a#mapSN { left: 132px;    top: 117px; z-index: 1; }
+#mapD a#mapST { left: 103px;    top: 70px; }
+#mapD a#mapSH { left: 48px;     top: 1px; }
+#mapD a#mapTH { left: 88px;     top: 119px; }
+
+#mapD div#mapInfo {
+    color: #333333;
+    font-family: verdana;
+    left: 160px;
+    line-height: 16px;
+    position: absolute;
+    text-align: left;
+    top: 160px;
+    width: 220px;
+}
+
+/* http://solemone.de/demos/fullsize-background-image-with-css3-background-size/ */
+@media (min-width: 1200px) {
+    #intro {
+        background: url('/Images/bgtransgrad-500.png') no-repeat left center,
+                    url('/Images/IntroBack/home-full.jpg') no-repeat right center; 
+    }
+}
+@media (min-width: 980px) and (max-width: 1199px) {
+    #intro {
+        background: url('/Images/bgtransgrad-500.png') no-repeat left center, 
+                    url('/Images/IntroBack/home-1200.jpg') no-repeat right center;
+    }
+}
+@media (min-width: 768px) and (max-width: 979px) {
+    #body table#workflow-schema th { padding: 4px; }
+    #body table#workflow-schema th span { font-size: 0.75em; }
+    #body table#workflow-schema td { line-height: 12px; }
+    #body table#workflow-schema td img { height: 50%; }
+    #intro {
+        background: url('/Images/bgtransgrad-250.png') no-repeat left center,
+                    url('/Images/IntroBack/home-980.jpg') no-repeat right center;  /*... / cover*/
+    }
+}
+@media (max-width: 767px) {
+    #intro {
+        background: url('/Images/bgtransgrad-150.png') no-repeat left center,
+                    url('/Images/IntroBack/home-770.jpg') no-repeat right center; 
+    }
+    #body table#workflow-schema th { padding: 4px; }
+    #body table#workflow-schema th span { font-size: 0.75em; }
+    #body table#workflow-schema td { line-height: 12px; }
+    #body table#workflow-schema td img { height: 50%; }
+}

@@ -1,0 +1,62 @@
+﻿@media (min-width: 1200px) {
+    #intro {
+        background: url('/Images/bgtransgrad-500.png') no-repeat left center, 
+                    url('/Images/IntroBack/feedback-full.jpg') no-repeat right center; 
+    }
+}
+@media (min-width: 980px) and (max-width: 1199px) {
+    #intro {
+        background: url('/Images/bgtransgrad-500.png') no-repeat left center, 
+                    url('/Images/IntroBack/feedback-1200.jpg') no-repeat right center; 
+    }
+}
+@media (min-width: 768px) and (max-width: 979px) {
+    #intro {
+        background: url('/Images/bgtransgrad-250.png') no-repeat left center, 
+                    url('/Images/IntroBack/feedback-980.jpg') no-repeat right center; 
+    }
+}
+@media (max-width: 767px) {
+    #intro {
+        background: url('/Images/bgtransgrad-150.png') no-repeat left center, 
+                    url('/Images/IntroBack/feedback-770.jpg') no-repeat right center; 
+    }
+}
+
+#body div.content div.feedbackbox {
+    position: relative;
+}
+#body div.content div.feedbackbox > i {
+    display: block; 
+    left: 0; 
+    top: 0; 
+    position: absolute; 
+    margin: 0px 20px 20px 0px; 
+    font-size: 50px;
+}
+#body div.content div.feedbackbox div.feedback {
+    padding-left: 75px;
+}
+#body div.content div.feedbackbox div.feedback h4 {
+    line-height: 18px;
+}
+#body div.content div.feedbackbox div.feedback p {
+    margin: 0 0 5px;
+}
+#fbt-filter {
+    margin-top: 10px; 
+    display:inline-block;    
+}
+#fbt-filter a.cmd-filter.fbt-type-all { color: #333333; border-color: #333333; }
+#fbt-filter a.cmd-filter.fbt-type-0 { color: #2D76AA; border-color: #2D76AA; }
+#fbt-filter a.cmd-filter.fbt-type-1 { color: #E47900; border-color: #E47900; }
+#fbt-filter a.cmd-filter.fbt-type-2 { color: #B80000; border-color: #B80000; }
+
+#fbt-filter a.cmd-filter.fbt-type-all.selected,
+#fbt-filter a.cmd-filter.fbt-type-all:hover { background-color: #333333; }
+#fbt-filter a.cmd-filter.fbt-type-0.selected,
+#fbt-filter a.cmd-filter.fbt-type-0:hover { background-color: #2D76AA; }
+#fbt-filter a.cmd-filter.fbt-type-1.selected,
+#fbt-filter a.cmd-filter.fbt-type-1:hover { background-color: #E47900; }
+#fbt-filter a.cmd-filter.fbt-type-2.selected,
+#fbt-filter a.cmd-filter.fbt-type-2:hover { background-color: #B80000; }

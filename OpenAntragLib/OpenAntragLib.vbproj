@@ -1,0 +1,278 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{0FFFC9E8-FE8F-485E-88FC-AF0B947E9FB2}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>OpenAntrag</RootNamespace>
+    <AssemblyName>OpenAntragLib</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>Windows</MyType>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>OpenAntragLib.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>OpenAntragLib.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ActionMailer.Net">
+      <HintPath>packages\ActionMailer.0.7.4\lib\Net40\ActionMailer.Net.dll</HintPath>
+    </Reference>
+    <Reference Include="ActionMailer.Net.Mvc">
+      <HintPath>packages\ActionMailer.0.7.4\lib\Net40\ActionMailer.Net.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="HtmlAgilityPack">
+      <HintPath>..\OpenAntrag\packages\HtmlAgilityPack.1.4.9\lib\Net45\HtmlAgilityPack.dll</HintPath>
+    </Reference>
+    <Reference Include="LinqToTwitter, Version=2.1.12.0, Culture=neutral, PublicKeyToken=957107be965c25d9, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Libraries\LinqToTwitter.dll</HintPath>
+    </Reference>
+    <Reference Include="MarkdownDeep">
+      <HintPath>packages\MarkdownDeep.NET.1.5\lib\.NetFramework 3.5\MarkdownDeep.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\OpenAntrag\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\OpenAntrag\packages\Newtonsoft.Json.6.0.6\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Raven.Abstractions, Version=2.5.0.0, Culture=neutral, PublicKeyToken=37f41c7f99471593, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\OpenAntrag\packages\RavenDB.Client.2.5.2935\lib\net45\Raven.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Raven.Client.Lightweight, Version=2.5.0.0, Culture=neutral, PublicKeyToken=37f41c7f99471593, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\OpenAntrag\packages\RavenDB.Client.2.5.2935\lib\net45\Raven.Client.Lightweight.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.Composition" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Net.Http.Formatting, Version=5.2.2.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\OpenAntrag\packages\Microsoft.AspNet.WebApi.Client.5.2.2\lib\net45\System.Net.Http.Formatting.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.WebRequest" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Helpers, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\OpenAntrag\packages\Microsoft.AspNet.WebPages.3.2.2\lib\net45\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http, Version=5.2.2.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\OpenAntrag\packages\Microsoft.AspNet.WebApi.Core.5.2.2\lib\net45\System.Web.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http.WebHost, Version=5.2.2.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\OpenAntrag\packages\Microsoft.AspNet.WebApi.WebHost.5.2.2\lib\net45\System.Web.Http.WebHost.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc">
+      <HintPath>..\OpenAntrag\packages\Microsoft.AspNet.Mvc.5.2.2\lib\net45\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\OpenAntrag\packages\Microsoft.AspNet.Razor.3.2.2\lib\net45\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\OpenAntrag\packages\Microsoft.AspNet.WebPages.3.2.2\lib\net45\System.Web.WebPages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\OpenAntrag\packages\Microsoft.AspNet.WebPages.3.2.2\lib\net45\System.Web.WebPages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\OpenAntrag\packages\Microsoft.AspNet.WebPages.3.2.2\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Attributes\HandleCustomErrorAttribute.vb" />
+    <Compile Include="CDataSyndicationContent.vb" />
+    <Compile Include="CSVIgnore.vb" />
+    <Compile Include="CSVMediaTypeFormatter.vb" />
+    <Compile Include="CustomErrorInfo.vb" />
+    <Compile Include="CustomHeaderModule.vb" />
+    <Compile Include="Controller\CommonController.vb" />
+    <Compile Include="Controller\DocumentStoreController.vb" />
+    <Compile Include="Controller\MailController.vb" />
+    <Compile Include="CustomException.vb" />
+    <Compile Include="DataDocumentStore.vb" />
+    <Compile Include="Extensions\ControllerExtensions.vb" />
+    <Compile Include="Extensions\GeneralExtensions.vb" />
+    <Compile Include="Extensions\TagBuilderExtension.vb" />
+    <Compile Include="FeedResult.vb" />
+    <Compile Include="Attributes\HandleErrorAsJsonAttribute.vb" />
+    <Compile Include="GlobalData.vb" />
+    <Compile Include="Helper\MarkdownHelper.vb" />
+    <Compile Include="Helper\PagerHelper.vb" />
+    <Compile Include="Helper\PartialHelper.vb" />
+    <Compile Include="HtmlHelperExtensions.vb" />
+    <Compile Include="Interfaces\IXMLClass.vb" />
+    <Compile Include="Manager\MailManager.vb" />
+    <Compile Include="Manager\NotificationManager.vb" />
+    <Compile Include="Manager\PushbulletManager.vb" />
+    <Compile Include="Manager\PushbulletMessage.vb" />
+    <Compile Include="Manager\PushoverManager.vb" />
+    <Compile Include="Manager\PushoverMessage.vb" />
+    <Compile Include="Manager\StatisticsManager.vb" />
+    <Compile Include="Manager\TwitterManager.vb" />
+    <Compile Include="Models\Account\ChangePasswordModel.vb" />
+    <Compile Include="Models\Account\LogonModel.vb" />
+    <Compile Include="Models\Account\Member.vb" />
+    <Compile Include="Models\Account\Members.vb" />
+    <Compile Include="Models\Account\ResetPasswordModel.vb" />
+    <Compile Include="Models\Home\SearchModel.vb" />
+    <Compile Include="Models\IModelBase.vb" />
+    <Compile Include="Models\IRavenModelBase.vb" />
+    <Compile Include="Models\KeyValueObject.vb" />
+    <Compile Include="Models\ModelBase.vb" />
+    <Compile Include="Models\Proposal\ProcessStep.vb" />
+    <Compile Include="Models\Proposal\Proposal.vb" />
+    <Compile Include="Models\Proposal\ProposalAbuseNotice.vb" />
+    <Compile Include="Models\Proposal\ProposalComment.vb" />
+    <Compile Include="Models\Proposal\ProposalDTO.vb" />
+    <Compile Include="Models\Proposal\Proposals.vb" />
+    <Compile Include="Models\Proposal\ProposalTags.vb" />
+    <Compile Include="Models\Representation\piratenmandate.vb" />
+    <Compile Include="Models\Shared\ErrorLog.vb" />
+    <Compile Include="Models\Shared\ErrorLogs.vb" />
+    <Compile Include="Models\Shared\ProcessStepDefinitions.vb" />
+    <Compile Include="Models\SuccessStory\SuccessStories.vb" />
+    <Compile Include="Models\SuccessStory\SuccessStory.vb" />
+    <Compile Include="Models\RavenIndexModels.vb" />
+    <Compile Include="Models\RavenModelBase.vb" />
+    <Compile Include="Models\Representation\Representation.vb" />
+    <Compile Include="Models\Representation\RepresentationClone.vb" />
+    <Compile Include="Models\Representation\Representations.vb" />
+    <Compile Include="Models\Representation\RepresentationSetting.vb" />
+    <Compile Include="Models\Shared\Committee.vb" />
+    <Compile Include="Models\Shared\FederalStates.vb" />
+    <Compile Include="Models\Shared\Feedback.vb" />
+    <Compile Include="Models\Shared\FeedbackComment.vb" />
+    <Compile Include="Models\Shared\Feedbacks.vb" />
+    <Compile Include="Models\Shared\FeedbackStatusCodes.vb" />
+    <Compile Include="Models\Shared\FeedbackTypes.vb" />
+    <Compile Include="Models\Shared\GovernmentalLevels.vb" />
+    <Compile Include="Models\Shared\GroupTypes.vb" />
+    <Compile Include="Models\Shared\Notification.vb" />
+    <Compile Include="Models\Shared\Notifications.vb" />
+    <Compile Include="Models\Shared\PagerModel.vb" />
+    <Compile Include="Models\Shared\Representative.vb" />
+    <Compile Include="Models\StatisticDataModels.vb" />
+    <Compile Include="Models\Teaser\Teaser.vb" />
+    <Compile Include="Models\Teaser\Teasers.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="RandomKeyGenerator.vb" />
+    <Compile Include="RepresentationRouteConstraint.vb" />
+    <Compile Include="UrlShortener.vb" />
+    <Compile Include="Tools.vb" />
+    <Compile Include="ValidationAttributes\AccountMailUniqueAttribute.vb" />
+    <Compile Include="ValidationAttributes\AccountNameUniqueAttribute.vb" />
+    <Compile Include="ValidationAttributes\MailValidAttribute.vb" />
+    <Compile Include="ValidationAttributes\UrlValidAttribute.vb" />
+    <Compile Include="Wrapper\CookieWrapper.vb" />
+    <Compile Include="Wrapper\SessionWrapper.vb" />
+    <Compile Include="Wrapper\SettingsWrapper.vb" />
+    <Compile Include="XmlHelper.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Libraries\LinqToTwitter.dll" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

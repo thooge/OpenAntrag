@@ -1,0 +1,186 @@
+/**********************************************************
+ * THEME: "default"                                       *
+ **********************************************************/
+.selectize-control.default.multi .selectize-input > div {
+    background-color: #ddd;
+    border: medium none;
+    color: #333;
+    margin-right: 10px;
+    padding: 5px 10px;   
+}
+.selectize-control.default.multi .selectize-input > div:hover,
+.selectize-control.default.multi .selectize-input > div.active,
+.selectize-control.default.multi .selectize-dropdown .highlight,
+.selectize-control.default.multi .selectize-dropdown > *.active {
+    background-color: #ddd;
+    color: #333;
+}
+
+/**********************************************************
+ * BASIC AESTHETIC STYLES (common)                        *
+ **********************************************************/
+.selectize-input, .selectize-control.single .selectize-input.focus {
+	background: #fff;
+	padding: 10px;
+	cursor: text;
+	display: inline-block;
+	width: 100%;
+}
+.selectize-input.focus {
+}
+.selectize-input.dropdown-active {
+}
+.selectize-input.full {
+	background-color: #f4f4f4;
+}
+.selectize-input.dropdown-active::before {
+	content: ' ';
+	display: block;
+	position: absolute;
+	background: #f4f4f4;
+	height: 1px;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+.selectize-control.multi .selectize-input.has-items {
+	padding-top: 8px !important;
+	padding-bottom: 3px !important;
+}
+.selectize-control.multi .selectize-input > div {
+	cursor: pointer;
+	margin: 0 5px 5px 0;
+	padding: 1px 5px;
+    background-color: #333;
+    color: #fff;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgba(0, 0, 0, 0.15) rgba(0, 0, 0, 0.15) rgba(0, 0, 0, 0.25);    
+}
+.selectize-input > div:last-child {
+	margin-right: 5px;
+}
+.selectize-input > input {
+	margin-right: 2px !important;
+}
+.selectize-dropdown, .selectize-input, .selectize-control.single .selectize-input.dropdown-active {
+	border: 1px solid rgba(0, 0, 0, 0.2);
+}
+.selectize-dropdown {
+    max-height: 200px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    background: #fff;
+    margin-top: -1px;
+    border-top: 0 none;
+    -webkit-box-shadow: 2px 2px 12px -4px rgba(0, 0, 0, 0.5);
+    box-shadow: 2px 2px 12px -4px rgba(0, 0, 0, 0.5);
+}
+.selectize-dropdown > * {
+	padding: 4px 6px;
+}
+.selectize-dropdown > *.create {
+	color: #333;
+}
+.selectize-dropdown > *.active {
+	background-color: #333;
+    color: #fff;
+}
+.selectize-dropdown, 
+.selectize-input, 
+.selectize-input input {
+	color: #333;
+	font-family: Helvetica, arial, sans-serif;
+	font-size: 14px;
+	line-height: 20px;
+	-webkit-font-smoothing: antialiased;
+}
+.selectize-dropdown .highlight {
+	background: rgba(255, 237, 40, 0.4);
+}
+
+/**********************************************************
+ * BASIC AESTHETIC STYLES (single)                        *
+ **********************************************************/
+.selectize-control.single .selectize-input {
+	cursor: pointer;
+	border-color: #b8b8b8;
+	background: #f6f6f6;
+}
+
+.selectize-control.single .selectize-input::after {
+	content: ' ';
+	display: block;
+	position: absolute;
+	top: 50%;
+	right: 15px;
+	margin-top: -2px;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 5px 5px 0 5px;
+	border-color: #808080 transparent transparent transparent;
+}
+
+.selectize-control.single .selectize-input.dropdown-active::after {
+	margin-top: -3px;
+	border-width: 0 5px 5px 5px;
+	border-color: transparent transparent #808080 transparent;
+}
+
+/**********************************************************
+ * BASIC AESTHETIC STYLES (multi)                         *
+ **********************************************************/
+
+/**********************************************************
+ * LAYOUT STYLES (mandatory)                              *
+ **********************************************************/
+
+.selectize-control {
+	position: relative;
+}
+.selectize-input {
+	overflow: hidden;
+	position: relative;
+	z-index: 1;
+}
+.selectize-input:after {
+	content: ' ';
+	display: block;
+	clear: left;
+}
+.selectize-input .items {
+	display: inline;
+}
+.selectize-input > * {
+	vertical-align: baseline;
+	display: -moz-inline-stack;
+	display: inline-block;
+	zoom: 1;
+	*display: inline;
+}
+.selectize-input > input {
+	max-width: 100% !important;
+	text-indent: 0 !important;
+	border: 0 none !important;
+	background: none !important;
+	padding: 0 !important;
+	margin: 0;
+	line-height: inherit !important;
+}
+.selectize-input > input:focus {
+	outline: none !important;
+}
+.selectize-dropdown {
+	position: absolute;
+	z-index: 2;
+}
+.selectize-dropdown > * {
+	cursor: pointer;
+	overflow: hidden;
+}
+.selectize-input, .selectize-dropdown {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
