@@ -349,7 +349,7 @@ End Code
             </p>
             <p>In OpenAntrag findet keinerlei Logging oder Tracking statt. Die IIS-Standardlogs sind ausgeschaltet. 
                 So werden auch keinerlei externe Services eingebunden, die einem Logging unterliegen könnten.</p>
-            <p>Das Projekt wurde auf <a href="https://openantrag.codeplex.com">https://openantrag.codeplex.com</a> veröffentlicht.</p>
+            <p>Das Projekt wurde auf <a href="https://github.com/kristofzerbe/OpenAntrag">https://github.com/kristofzerbe/OpenAntrag</a> veröffentlicht.</p>
         </div>
     </div>
 </div>
