@@ -11,16 +11,15 @@ Public Class HandleCustomErrorAttribute
         If New HttpException(Nothing, filterContext.Exception).GetHttpCode() <> 500 Then Return
         If Not ExceptionType.IsInstanceOfType(filterContext.Exception) Then Return
 
-        Dim log As New ErrorLog()
-
-        log.AbsoluteUri = filterContext.HttpContext.Request.Url.AbsoluteUri
-        log.Controller = filterContext.RouteData.Values("controller").ToString()
-        log.Action = filterContext.RouteData.Values("action").ToString()
-        log.RequestType = filterContext.HttpContext.Request.RequestType
-        log.Message = filterContext.Exception.Message
-
-        log.AjaxCall = (filterContext.HttpContext.Request.Headers("X-Requested-With") IsNot Nothing AndAlso
+        Dim log As New ErrorLog With {
+            .AbsoluteUri = filterContext.HttpContext.Request.Url.AbsoluteUri,
+            .Controller = filterContext.RouteData.Values("controller").ToString(),
+            .Action = filterContext.RouteData.Values("action").ToString(),
+            .RequestType = filterContext.HttpContext.Request.RequestType,
+            .Message = filterContext.Exception.Message,
+            .AjaxCall = (filterContext.HttpContext.Request.Headers("X-Requested-With") IsNot Nothing AndAlso
                         filterContext.HttpContext.Request.Headers("X-Requested-With") = "XMLHttpRequest")
+        }
 
         Dim userAgent As String = filterContext.HttpContext.Request.UserAgent
 

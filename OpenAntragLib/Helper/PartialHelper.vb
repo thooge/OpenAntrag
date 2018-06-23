@@ -47,10 +47,10 @@ Public Module PartialExtensions
         If String.IsNullOrEmpty(partialViewName) Then
             Throw New ArgumentNullException("partialViewName")
         End If
-        Dim dictionary As New ViewDataDictionary(If(viewData, htmlHelper.ViewData))
-
         ' we explicitly set the model here so we don't get the current Model as fallback.
-        dictionary.Model = model
+        Dim dictionary As New ViewDataDictionary(If(viewData, htmlHelper.ViewData)) With {
+            .Model = model
+        }
 
         Dim viewContext As New ViewContext(htmlHelper.ViewContext, htmlHelper.ViewContext.View, dictionary, htmlHelper.ViewContext.TempData, writer)
         FindPartialView(viewContext, partialViewName, viewEngineCollection).Render(viewContext, writer)

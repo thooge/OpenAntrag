@@ -12,7 +12,7 @@
     <OutputType>Library</OutputType>
     <RootNamespace>OpenAntrag</RootNamespace>
     <AssemblyName>OpenAntrag</AssemblyName>
-    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.7.1</TargetFrameworkVersion>
     <OptionExplicit>On</OptionExplicit>
     <OptionCompare>Binary</OptionCompare>
     <OptionStrict>Off</OptionStrict>
@@ -28,6 +28,8 @@
     <SccAuxPath>SAK</SccAuxPath>
     <SccProvider>SAK</SccProvider>
     <TargetFrameworkProfile />
+    <Use64BitIISExpress />
+    <UseGlobalApplicationHostFile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -71,8 +73,9 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>packages\HtmlAgilityPack.1.4.9\lib\Net45\HtmlAgilityPack.dll</HintPath>
     </Reference>
-    <Reference Include="MarkdownDeep">
-      <HintPath>packages\MarkdownDeep.Full.1.5\lib\.NetFramework 3.5\MarkdownDeep.dll</HintPath>
+    <Reference Include="MarkdownDeep, Version=1.5.4615.26275, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>packages\MarkdownDeep.NET.1.5\lib\.NetFramework 3.5\MarkdownDeep.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <Private>True</Private>
@@ -238,6 +241,10 @@
     <Content Include="App_Data\piratenmandate.xml">
       <SubType>Designer</SubType>
     </Content>
+    <Content Include="App_Data\Representations.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_Data\Users.xml" />
     <Content Include="Content\domain.css" />
     <Content Include="Content\error.css" />
     <Content Include="Content\faq.css" />
@@ -443,41 +450,41 @@
     <Content Include="Images\Logos\OALogo50.png" />
     <Content Include="Images\Logos\PPLogo315.png" />
     <Content Include="Images\Logos\PPLogo50.png" />
-    <Content Include="Images\Map\200-BB-blue.png" />
-    <Content Include="Images\Map\200-BB-orange.png" />
-    <Content Include="Images\Map\200-BE-blue.png" />
-    <Content Include="Images\Map\200-BE-orange.png" />
-    <Content Include="Images\Map\200-BW-blue.png" />
-    <Content Include="Images\Map\200-BW-orange.png" />
-    <Content Include="Images\Map\200-BY-blue.png" />
-    <Content Include="Images\Map\200-BY-orange.png" />
+    <Content Include="Images\Map\200-BB-active.png" />
+    <Content Include="Images\Map\200-BB-inactive.png" />
+    <Content Include="Images\Map\200-BE-active.png" />
+    <Content Include="Images\Map\200-BE-inactive.png" />
+    <Content Include="Images\Map\200-BW-active.png" />
+    <Content Include="Images\Map\200-BW-inactive.png" />
+    <Content Include="Images\Map\200-BY-active.png" />
+    <Content Include="Images\Map\200-BY-inactive.png" />
     <Content Include="Images\Map\200-DE-gray.png" />
     <Content Include="Images\Map\200-DE-white.png" />
     <Content Include="Images\Map\200-DE.png" />
-    <Content Include="Images\Map\200-HB-blue.png" />
-    <Content Include="Images\Map\200-HB-orange.png" />
-    <Content Include="Images\Map\200-HE-blue.png" />
-    <Content Include="Images\Map\200-HE-orange.png" />
-    <Content Include="Images\Map\200-HH-blue.png" />
-    <Content Include="Images\Map\200-HH-orange.png" />
-    <Content Include="Images\Map\200-MV-blue.png" />
-    <Content Include="Images\Map\200-MV-orange.png" />
-    <Content Include="Images\Map\200-NI-blue.png" />
-    <Content Include="Images\Map\200-NI-orange.png" />
-    <Content Include="Images\Map\200-NW-blue.png" />
-    <Content Include="Images\Map\200-NW-orange.png" />
-    <Content Include="Images\Map\200-RP-blue.png" />
-    <Content Include="Images\Map\200-RP-orange.png" />
-    <Content Include="Images\Map\200-SH-blue.png" />
-    <Content Include="Images\Map\200-SH-orange.png" />
-    <Content Include="Images\Map\200-SL-blue.png" />
-    <Content Include="Images\Map\200-SL-orange.png" />
-    <Content Include="Images\Map\200-SN-blue.png" />
-    <Content Include="Images\Map\200-SN-orange.png" />
-    <Content Include="Images\Map\200-ST-blue.png" />
-    <Content Include="Images\Map\200-ST-orange.png" />
-    <Content Include="Images\Map\200-TH-blue.png" />
-    <Content Include="Images\Map\200-TH-orange.png" />
+    <Content Include="Images\Map\200-HB-active.png" />
+    <Content Include="Images\Map\200-HB-inactive.png" />
+    <Content Include="Images\Map\200-HE-active.png" />
+    <Content Include="Images\Map\200-HE-inactive.png" />
+    <Content Include="Images\Map\200-HH-active.png" />
+    <Content Include="Images\Map\200-HH-inactive.png" />
+    <Content Include="Images\Map\200-MV-active.png" />
+    <Content Include="Images\Map\200-MV-inactive.png" />
+    <Content Include="Images\Map\200-NI-active.png" />
+    <Content Include="Images\Map\200-NI-inactive.png" />
+    <Content Include="Images\Map\200-NW-active.png" />
+    <Content Include="Images\Map\200-NW-inactive.png" />
+    <Content Include="Images\Map\200-RP-active.png" />
+    <Content Include="Images\Map\200-RP-inactive.png" />
+    <Content Include="Images\Map\200-SH-active.png" />
+    <Content Include="Images\Map\200-SH-inactive.png" />
+    <Content Include="Images\Map\200-SL-active.png" />
+    <Content Include="Images\Map\200-SL-inactive.png" />
+    <Content Include="Images\Map\200-SN-active.png" />
+    <Content Include="Images\Map\200-SN-inactive.png" />
+    <Content Include="Images\Map\200-ST-active.png" />
+    <Content Include="Images\Map\200-ST-inactive.png" />
+    <Content Include="Images\Map\200-TH-active.png" />
+    <Content Include="Images\Map\200-TH-inactive.png" />
     <Content Include="Images\Map\_40-DE.png" />
     <Content Include="Images\mCSB_buttons.png" />
     <Content Include="Images\pattern.png" />
@@ -672,8 +679,8 @@
     </VisualStudio>
   </ProjectExtensions>
   <PropertyGroup>
-    <PreBuildEvent>xcopy /y "E:\DevProjects\piratenmandate\piratenmandate.xml"  "$(ProjectDir)App_Data"
-xcopy /y "E:\DevProjects\piratenmandate\piratenmandate.dtd"  "$(ProjectDir)App_Data"</PreBuildEvent>
+    <PreBuildEvent>xcopy /y "C:\Users\Entwicklung\source\repos\piratenmandate\piratenmandate.xml"  "$(ProjectDir)App_Data"
+xcopy /y "C:\Users\Entwicklung\source\repos\piratenmandate\piratenmandate.dtd"  "$(ProjectDir)App_Data"</PreBuildEvent>
   </PropertyGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

@@ -14,12 +14,11 @@ Public Module MarkdownHelper
     ''' <returns>The HTML representation of the supplied Markdown.</returns>
     Public Function Markdown(ByVal text As String,
                              Optional ByVal bolSafeMode As Boolean = True) As IHtmlString
-
-        Dim md = New Markdown()
-
-        md.ExtraMode = True
-        md.SafeMode = bolSafeMode
-        md.NewWindowForExternalLinks = True
+        Dim md = New Markdown With {
+            .ExtraMode = True,
+            .SafeMode = bolSafeMode,
+            .NewWindowForExternalLinks = True
+        }
 
         Dim html As String = md.Transform(text)
 

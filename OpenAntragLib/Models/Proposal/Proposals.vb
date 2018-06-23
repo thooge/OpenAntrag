@@ -405,10 +405,11 @@ Public Class Proposals
 
         Dim rep As Representation = GlobalData.Representations.GetByKey(keyRepresentation.ToLower)
 
-        Dim model As New Proposal(rep)
-        model.Title = title.StripSpecialCharsForTitle
-        model.Text = text
-        model.ContactInfo = contactInfo
+        Dim model As New Proposal(rep) With {
+            .Title = title.StripSpecialCharsForTitle,
+            .Text = text,
+            .ContactInfo = contactInfo
+        }
 
         If title.StartsWith("TEST:") Or rep.IsTest = True Then
             model.IsTest = True

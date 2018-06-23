@@ -122,12 +122,13 @@ Public Class piratenmandate
 
         Public ReadOnly Property GebietTypeAndName As String
             Get
-                Dim lstNoType As New List(Of String)
-                lstNoType.Add("kreis")
-                lstNoType.Add("landkreis")
-                lstNoType.Add("landschaftsverband")
-                lstNoType.Add("regionalverband")
-                lstNoType.Add("kommunalverband besonderer art")
+                Dim lstNoType As New List(Of String) From {
+                    "kreis",
+                    "landkreis",
+                    "landschaftsverband",
+                    "regionalverband",
+                    "kommunalverband besonderer art"
+                }
 
                 If lstNoType.Contains(Me.GebietType.ToLower()) = True Or
                    Me.GebietName.ToLower.Contains("ortsamtsbereich") = True Then

@@ -28,9 +28,10 @@ Public Class RepresentationSettings
             If query.Count > 0 Then
                 model = query.First()
             Else
-                model = New RepresentationSetting()
-                model.Key = key
-                model.CreatedBy = HttpContext.Current.User.Identity.Name
+                model = New RepresentationSetting With {
+                    .Key = key,
+                    .CreatedBy = HttpContext.Current.User.Identity.Name
+                }
                 ds.Store(model)
                 ds.SaveChanges()
             End If
